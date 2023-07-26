@@ -219,12 +219,12 @@ void RGBLed::fade(int red, int green, int blue, int steps, int duration, int val
 	}
 }
 
-void RGBLed::crossFade(int rgbFrom[3], int rgbTo[3], int steps, int duration)
+void RGBLed::crossFade(int rgbFrom[3], int rgbTo[3], int steps, long duration)
 {
 	crossFade(rgbFrom[0], rgbFrom[1], rgbFrom[2], rgbTo[0], rgbTo[1], rgbTo[2], steps, duration);
 }
 
-void RGBLed::crossFade(int fromRed, int fromGreen, int fromBlue, int toRed, int toGreen, int toBlue, int steps, int duration)
+void RGBLed::crossFade(int fromRed, int fromGreen, int fromBlue, int toRed, int toGreen, int toBlue, int steps, long duration)
 {
 	// Determine per color change
 	//   toValue - fromValue = deltaValue
@@ -255,6 +255,7 @@ void RGBLed::crossFade(int fromRed, int fromGreen, int fromBlue, int toRed, int 
 		// delay based on total duration requested and number of steps
 		if (i < steps)
 		{
+			
 			delay((unsigned long)(duration / steps));
 		}
 	}

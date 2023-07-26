@@ -30,8 +30,8 @@ public:
 	void fadeIn(int rgb[3], int steps, int duration);
 	void fadeIn(int red, int green, int blue, int steps, int duration);
 
-	void crossFade(int rgbFrom[3], int rgbTo[3], int steps, int duration);
-	void crossFade(int fromRed, int fromGreen, int fromBlue, int toRed, int toGreen, int toBlue, int steps, int duration);
+	void crossFade(int rgbFrom[3], int rgbTo[3], int steps, long duration);
+	void crossFade(int fromRed, int fromGreen, int fromBlue, int toRed, int toGreen, int toBlue, int steps, long duration);
 	
 	void gradient(int rgbFrom[3], int rgbTo[3], int step);
 	void gradient(int fromRed, int fromGreen, int fromBlue, int toRed, int toGreen, int toBlue, int step);
