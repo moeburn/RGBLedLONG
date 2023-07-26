@@ -1,6 +1,6 @@
 # RGBLed Arduino library
 
-> This library for Arduino allows you to control RGB led.
+> This library for Arduino allows you to control RGB led.  This forked version extends the max fade duration from 30 seconds (16bit int) to 30 minutes (32bit long).
 
 ## Installation
 [Installing Additional Arduino Libraries](https://www.arduino.cc/en/Guide/Libraries)
